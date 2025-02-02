@@ -27,7 +27,6 @@ def parse_html(html):
 def get_activation_code():
     url = "https://filecxx.com/en_US/activation_code.html"
     headers = {"User-Agent": "Mozilla/5.0"}
-    # در هر تلاش اطلاعاتی در مورد خطا چاپ می‌شود
     for attempt in range(APP_CONFIG["max_retries"]):
         try:
             print(f"\nAttempt {attempt+1} of {APP_CONFIG['max_retries']}.........\n")
